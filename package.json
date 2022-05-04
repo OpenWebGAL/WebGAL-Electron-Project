@@ -7,9 +7,25 @@
   "author": "Mahiru <makinoharashoko@outlook.com>",
   "license": "MPL-2.0",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
   },
   "devDependencies": {
-    "electron": "^18.2.0"
+    "electron": "^18.2.0",
+    "electron-builder": "^23.0.3"
+  },
+  "build": {
+    "productName": "WebGAL",
+    "appId": "com.wtc.webgal",
+    "copyright": "webgal",
+    "directories": {
+      "output": "build"
+    },
+    "win": {
+      "icon": "public/icon.ico"
+    },
+    "electronDownload": {
+      "mirror": "https://npmmirror.com/mirrors/electron/"
+    }
   }
 }
