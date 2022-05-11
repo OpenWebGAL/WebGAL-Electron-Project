@@ -21,6 +21,7 @@
     "directories": {
       "output": "build"
     },
+    "asar": false,
     "win": {
       "icon": "public/icon.ico"
     },
